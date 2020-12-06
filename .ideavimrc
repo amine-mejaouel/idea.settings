@@ -25,8 +25,6 @@ set ideastatusicon=gray
 set idearefactormode=keep
 
 """ Mappings --------------------------------
-map <leader>f <Plug>(easymotion-s)
-map <leader>e <Plug>(easymotion-f)
 
 map <leader>d :action Debug<CR>
 map <leader>r :action RenameElement<CR>
@@ -40,20 +38,27 @@ map <S-Space> :action GotoNextError<CR>
 map <leader>b :action ToggleLineBreakpoint<CR>
  
 """ My Mappings ------------------------------
+
+""" EasyMotion Mappings------------------------------
+map <leader><leader>f <Plug>(easymotion-s)
+
 """ --( O )Open ( S )Solution
 map <leader>os :action RiderOpenSolution<CR>
 """ --( O )Open ( T )Terminal
 map <leader>ot :action ActivateTerminalToolWindow<CR>
 
 """ Code Mappings ------------------------------
-""" --( C )Code ( G )Generate
-map <leader>cg :action Generate<CR> 
-""" --( C )Code ( R )Refactorings
-map <leader>cr :action Refactorings.QuickListPopupAction<CR> 
-""" --( C )Code ( S )Surround
-map <leader>cs :action SurroundWith<CR>
+""" --( G )Generate ( C )Code 
+map <leader>gc :action Generate<CR> 
+""" --( R )Refactor ( C )Code 
+map <leader>rc :action Refactorings.QuickListPopupAction<CR> 
+""" --( S )Surround ( C )Code 
+map <leader>sc :action SurroundWith<CR>
 
 """ Format Mappings
+""" --( F )Format ( C )Code
+map <leader>fc :action ReformatCode<CR>    
+""" --( F )Format ( I )Indentation
 map <leader>fi :action AutoIndentLines<CR>    
 
 """ Navigation/Goto Mappings
