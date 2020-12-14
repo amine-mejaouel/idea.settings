@@ -46,6 +46,11 @@ map <leader><leader>f <Plug>(easymotion-s)
 map <leader>os :action RiderOpenSolution<CR>
 """ --( O )Open ( T )Terminal
 map <leader>ot :action ActivateTerminalToolWindow<CR>
+""" --( O )Open ( R )Run
+map <leader>or :action ActivateRunToolWindow<CR>
+
+""" --( R )Run
+map <leader>run :action Run<CR>
 
 """ Code Mappings ------------------------------
 """ --( G )Generate ( C )Code 
@@ -54,6 +59,8 @@ map <leader>gc :action Generate<CR>
 map <leader>rc :action Refactorings.QuickListPopupAction<CR> 
 """ --( S )Surround ( C )Code 
 map <leader>sc :action SurroundWith<CR>
+""" --( E )Extract ( M )Method
+map <leader>em :action ExtractMethod<CR>
 
 """ Format Mappings
 """ --( F )Format ( C )Code
