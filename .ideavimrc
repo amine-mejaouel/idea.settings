@@ -61,6 +61,8 @@ map <leader>rc :action Refactorings.QuickListPopupAction<CR>
 map <leader>sc :action SurroundWith<CR>
 """ --( E )Extract ( M )Method
 map <leader>em :action ExtractMethod<CR>
+""" --( I )Introduce ( V )Variable
+map <leader>iv :action IntroduceVariable<CR>
 
 """ Format Mappings
 """ --( F )Format ( C )Code
@@ -87,6 +89,9 @@ map <leader>gt :action GotoTypeDeclaration<CR>
 """ -- Goto ( B )Base symbol
 map <leader>gb :action GotoSuperMethod<CR>
 
+""" Multiple windows split
+""" MoveEditorToOppositeTabGroup
+map <c-w>m :action MoveEditorToOppositeTabGroup<CR>
 
 """ My specific settings ------------------
 set number 
