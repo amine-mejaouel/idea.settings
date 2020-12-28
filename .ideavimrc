@@ -24,6 +24,10 @@ set ideajoin
 set ideastatusicon=gray
 set idearefactormode=keep
 
+""" Insert Mode Mappings --------------------------------
+""" Enable Paste --------------------------------
+imap <C-V> <C-R>+
+
 """ Mappings --------------------------------
 
 map <leader>d :action Debug<CR>
