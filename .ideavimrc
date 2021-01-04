@@ -29,14 +29,16 @@ set idearefactormode=keep
 imap <C-V> <C-R>+
 
 """ Mappings --------------------------------
+map <leader>d \"_d
+map <leader>D \"_D
 
-map <leader>d :action Debug<CR>
-map <leader>r :action RenameElement<CR>
+map <leader><leader>d :action Debug<CR>
+
 map <leader>z :action ToggleDistractionFreeMode<CR>
+map <leader>h :action HideAllWindows<CR>
 
 map <leader>s :action SelectInProjectView<CR>
 map <leader>a :action Annotate<CR>
-map <leader>h :action Vcs.ShowTabbedFileHistory<CR>
 map <S-Space> :action GotoNextError<CR>
 
 map <leader>b :action ToggleLineBreakpoint<CR>
@@ -61,7 +63,9 @@ map <leader>run :action Run<CR>
 map <leader>gc :action Generate<CR> 
 """ --( R )Refactor ( C )Code 
 map <leader>rc :action Refactorings.QuickListPopupAction<CR> 
-""" --( S )Surround ( C )Code 
+""" --( R )Rename ( C )Code
+map <leader>rr :action RenameElement<CR>
+""" --( S )Surround ( C )Code
 map <leader>sc :action SurroundWith<CR>
 """ --( E )Extract ( M )Method
 map <leader>em :action ExtractMethod<CR>
