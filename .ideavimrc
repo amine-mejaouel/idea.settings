@@ -72,6 +72,11 @@ map <leader>em :action ExtractMethod<CR>
 """ --( I )Introduce ( V )Variable
 map <leader>iv :action IntroduceVariable<CR>
 
+""" --( R )Run ( T )To ( C )Cursor
+map <leader>rtc :action RunToCursor<CR>
+""" --( R )Run ( T )To ( C )Cursor non stop
+map <leader>rtC :action ForceRunToCursor<CR>
+
 """ Format Mappings
 """ --( F )Format ( C )Code
 map <leader>fc :action ReformatCode<CR>    
