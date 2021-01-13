@@ -32,7 +32,10 @@ imap <C-V> <C-R>+
 map <leader>d \"_d
 map <leader>D \"_D
 
-map <leader><leader>d :action Debug<CR>
+""" --( E )Expand ( S )Selection
+map <leader>es :action EditorSelectWord<CR>
+""" --( S )Shrink ( S )Selection
+map <leader>ss :action EditorUnSelectWord<CR>
 
 map <leader>z :action ToggleDistractionFreeMode<CR>
 map <leader>h :action HideAllWindows<CR>
