@@ -9,6 +9,7 @@ set argtextobj
 set easymotion
 set textobj-entire
 set ReplaceWithRegister
+set NERDTree
 
 """ Plugin settings -------------------------
 let g:argtextobj_pairs="[:],(:),<:>"
@@ -27,6 +28,14 @@ set idearefactormode=keep
 """ Insert Mode Mappings --------------------------------
 """ Enable Paste --------------------------------
 imap <C-V> <C-R>+
+
+""" EditorFontSize
+""" --EditorIncreaseFontSize
+map <leader>if :action EditorIncreaseFontSize<CR>
+""" --EditorDecreaseFontSize
+map <leader>df :action EditorDecreaseFontSize<CR>
+""" --EditorResetFontSize
+map <leader>rf :action EditorResetFontSize<CR>
 
 """ Mappings --------------------------------
 map <leader>d \"_d
